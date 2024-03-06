@@ -1,0 +1,43 @@
+#Filter {
+    width: 100%;
+    text-align: left;
+}
+
+#Filter input{
+    width: 15%;
+    padding: 12px;
+
+    gap: 8px;
+
+    border-radius: 50px;
+    border: 1px solid  #009252;
+    background: #FFF;
+
+    margin-right: 25px;
+}
+
+#Filter button {
+    float: right;
+
+    width: 9%;
+    height: 40px;
+    flex-shrink: 0;
+
+    border-radius:  50px;
+    background:  #CCFFE9;
+    border: none;
+
+    color: #063B00;
+    font-family: 'Inter', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#Filter button:hover {
+    cursor: pointer;
+
+    color: #FFFFFF;
+    background-color: #009252;
+}

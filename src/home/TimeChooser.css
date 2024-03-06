@@ -1,0 +1,45 @@
+#Time-Chooser {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+#Time-Chooser>span {
+    width: 20%;
+    display: inline-block;
+}
+
+#Time-Chooser>span>.title {
+    color: #505050;
+    font-family: 'Inter', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+    width: 130px;
+    flex-shrink: 0;
+}
+
+#Time-Chooser>span>input {
+    width: 70%;
+    padding: 12px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 5px;
+    border: 1px solid #009252;
+    background:  #FFF;
+
+    font-family: 'Inter', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+#Time-Chooser>span>input::-webkit-calendar-picker-indicator {
+    float: right;
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    color: rgba(8, 144, 0, 1);
+}
