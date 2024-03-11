@@ -25,8 +25,9 @@ function App() {
     const [currentPage, setCurrentPage] = useState('Trang chủ')
 
     useEffect(() => {
-        document.querySelector('body').style.backgroundColor = 'rgba(248, 249, 250, 1)'
-    })
+        if(accessToken)
+            document.querySelector('body').style.backgroundColor = 'rgba(248, 249, 250, 1)'
+    }, [])
 
     const renderPage = () => {
         if (currentPage === 'Trang chủ') {
@@ -53,7 +54,6 @@ function App() {
         return <Login setAccessToken={setAccessToken} setRefreshToken={setRefreshToken}/>
     }
     else {
-
         return (
             <div className="App">
                 <Header title={currentPage}/>

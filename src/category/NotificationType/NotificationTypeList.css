@@ -1,0 +1,90 @@
+#Notification-Type-List {
+    width: 100%;
+    text-align: left;
+
+    margin-top: 16px;
+
+    border-collapse: separate; /* Đảm bảo rằng các đường biên sẽ không được hợp nhất */
+    border-spacing: 10px; /* Khoảng cách giữa các dòng là 10px */
+}
+
+#Notification-Type-List thead {
+    height: 40px;
+    margin-bottom: 15px;
+    color:  #0A5D00;
+    font-family: 'Inter', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#Notification-Type-List  tr {
+    height: 40px;
+    margin-bottom: 10px;
+
+    color: #000;
+    font-family: 'Inter', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#Notification-Type-List  .type-name {
+
+    width: 30%;
+
+    color: #000;
+    font-family: 'Inter', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#Notification-Type-List  .type-description{
+    width: 44%;
+}
+
+#Notification-Type-List  .edit-button {
+    width: 150px;
+    height: 40px;
+    flex-shrink: 0;
+
+    border-radius: 50px;
+    background: #CCFFE9;
+
+    border: none;
+
+    color: #063B00;
+    font-family: 'Inter', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-right: 10px;
+}
+#Notification-Type-List  button:hover {
+    cursor: pointer;
+}
+
+#Notification-Type-List  .delete-button {
+    width: 90px;
+    height: 40px;
+    flex-shrink: 0;
+
+    border-radius: 50px;
+    background: #FFC6C6;
+
+    border: none;
+
+    color: #F03;
+    font-family: 'Inter', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+

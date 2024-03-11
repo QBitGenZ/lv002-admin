@@ -1,13 +1,13 @@
-import './AddDevice.css'
+import './AddEvent.css'
 
-export default function AddDevice({setAddDevice}) {
+export default function AddEvent({setAdd}) {
 
     function handleClick(e) {
-        setAddDevice(false)
+        setAdd(false)
     }
 
     return (
-        <div id={'Add-Device'}>
+        <div id={'Add-Event'}>
             <div className={'image-container'}>
                 <input type="file" id="image-input" accept="image/*" style={{display: 'none'}}/>
                 <label for="image-input">
@@ -19,28 +19,32 @@ export default function AddDevice({setAddDevice}) {
             <div className={'info-container'}>
                 <table>
                     <tr>
-                        <td>
-                            <div>Tên thiết bị</div>
-                            <input type={"text"}/>
+                        <td colSpan={2}>
+                            <div>Tên sự kiện</div>
+                            <input style={{width: '90%'}} type={"text"}/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colSpan={2}>
+                            <div>Địa chỉ</div>
+                            <input style={{width: '90%'}} type={"text"}/>
                         </td>
                         <td>
-                            <div>Trạng thái sử dụng</div>
-                            <input type={"text"}/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <div>Loại xe</div>
-                            <input type={"text"}/>
+                            <div>Ngày bắt đầu</div>
+                            <input type={"datetime-local"}/>
                         </td>
                         <td>
-                            <div>Điểm giao dịch</div>
-                            <input type={"text"}/>
+                            <div>Ngày kết thúc</div>
+                            <input type={"datetime-local"}/>
                         </td>
                     </tr>
                     <tr>
-                    <td colSpan={2}>
-                            <div>Mô tả</div>
+                        <td colSpan={2}>
+                            <div>Chi tiết sự kiện</div>
                             <textarea rows={8}/>
                         </td>
 

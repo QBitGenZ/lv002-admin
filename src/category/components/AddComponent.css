@@ -1,0 +1,92 @@
+#Add-Background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 10000;
+
+    background-color: #838383;
+}
+
+#Add-Background #Add-Component {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    width: 39.1%;
+    padding: 36px 40px;
+    text-align: left;
+    gap: 36px;
+
+    background-color: #FFFFFF;
+}
+
+#Add-Component h2 {
+    color: #54595E;
+    font-family: 'Inter', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#Add-Component .name, #Add-Component .detail {
+    color: #4F4F4F;
+    font-family: 'Inter', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+
+    margin-top: 16px;
+}
+
+#Add-Component input {
+    border-radius: 8px;
+    border: 1px solid #D1D1D1;
+    background: #FFF;
+    margin-top: 6px;
+
+    height: 14px;
+    padding: 14px 16px;
+    width: calc(100% - 40px);
+
+    font-family: 'Inter', serif;
+    font-size: 18px;
+    font-style: normal;
+}
+
+#Add-Component .button-container {
+    width: calc(100% - 7px);
+    text-align: right;
+    margin-top: 36px;
+}
+
+#Add-Component button {
+    border-radius: 100px;
+
+    width: 140px;
+    height: 44px;
+    padding: 14px 16px;
+    margin-left: 10px;
+}
+
+#Add-Component button:hover {
+    cursor: pointer;
+}
+
+#Add-Component .button-exit {
+    border: 1px solid #009252;
+    background: #FFF;
+}
+
+#Add-Component .button-save {
+    color: #FFFFFF;
+    border: none;
+    background: #009252;
+}
+
